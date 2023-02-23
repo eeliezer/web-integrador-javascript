@@ -648,6 +648,8 @@ footer{
     border-radius: 5px;
     width: 100px;
     margin: 10px;
+    background: white;
+    border-color: black;
 }
 
 .deleteItem{
@@ -909,6 +911,7 @@ footer{
   
 .showOverlay {
     display: block;
+    z-index: 1;
 }
 
 .scrolling {
