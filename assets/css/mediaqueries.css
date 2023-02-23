@@ -1,0 +1,107 @@
+@media (max-width: 1000px) {
+  
+    header{
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .bannerTop{
+        display: none;
+    }
+
+    .bannerBottom{
+        display: none;
+    }
+
+    main{
+        padding-top: 80px;
+    }
+
+    .menuLabel {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+        filter: invert(1);
+    }
+  
+    .menuLabel img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .panelUser{
+        width: 50%;
+    }
+
+    .navbar {
+        gap: 10px;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    .navbarList {
+        position: absolute;
+        top: -330px;
+        width: 100%;
+        flex-direction: column;
+        background: lightgray var(--header-bg-color);
+        border: 2px solid white;
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 30px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+    }
+
+    .navbar-list a {
+        font-size: 18px;
+    }
+
+    .imageProductFilter {
+        height: 100px;
+    }
+
+    .cartContainer{
+        top: 80px;
+    }
+
+    .openCart{
+        top: 80px;
+    }
+
+    .openMenu {
+        opacity: 1;
+        top: 80px;
+        z-index: 0;
+    }
+
+    .overlay{
+        top: 80px;
+        z-index: 0;
+        height: 880vh;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+}
+
+@media (max-width: 450px){
+
+}

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>E&E Furnitures</title>
 </head>
@@ -13,260 +15,116 @@
         <div class="bannerTop centerAlignFlex">
             <p class="bannerTopText">REVISA NUESTRAS MAS RECIENTES COLABORACIONES EN LA INDUSTRIA DEL DISEÑO DE INTERIORES</p>
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <div class="logoContainer centerAlignFlex">
-                <img src="./assets/img/logoeye.png" alt="Logo Compañia" class="logoCompany">
+                <a href="./index.html" class="lineAnimated"><img src="./assets/img/logoeye.png" alt="Logo Compañia" class="logoCompany"></a>
             </div>
             <ul class="navbarList">
-                <li class="home">HOME</li>
-                <li class="category">CATEGORÍAS</li>
-                <li class="deals">OFERTAS</li>
-                <li class="contact">CONTACTO</li>
-                <li class="about">NOSOTROS</li>
+                <li class="home"><a href="./index.html" class="lineAnimated">HOME</a></li>
+                <li class="category"><a href="./index.html#categoriaFilter" class="lineAnimated">CATEGORÍAS</a></li>
+                <li class="localStores"><a href="./index.html#locales" class="lineAnimated">LOCALES</a></li>
+                <li class="gallery"><a href="#./index.htmlgaleria" class="lineAnimated">EXPOSICIONES</a></li>
+                <li class="contact"><a href="#" class="lineAnimated">CONTACTO</a></li>
+                <li class="about"><a href="#" class="lineAnimated">NOSOTROS</a></li>
             </ul>
-            <div class="panelUser centerAlignFlex">
-                <div class="searchOption">
-                    <!--<img src="" alt="Buscar" class="searchIcon"> -->
-                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-
-                </div>
+            <div class="panelUser">
                 <div class="accountOption">
-                    <!--<img src="" alt="Usuario" class="accountIcon"> -->
-                    <i class="fa-solid fa-user fa-lg"></i>
+                    <a href="./login.html" class="lineAnimated hoverPanel"><i class="fa-solid fa-user fa-lg">   LOGIN</i></a>
+                    <a href="./register.html" class="lineAnimated hoverPanel"><p class="registerText">REGISTRARSE</p></a>
                 </div>
-                <div class="cartOption">
-                    <!--<img src="" alt="Carrito" class="cartIcon"> -->
+                <div class="cartOption hoverPanel">
                     <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <div class="cartBubble">0</div>
                 </div>
             </div>
+            <div class="menuLabel">
+                <img src="./assets/img/menu.png" alt="" class="menuIcon" />
+              </div>
         </nav>
         <div class="bannerBottom centerAlignFlex">
-            <p class="bannerBottomText">REVISA NUESTRAS MAS RECIENTES COLABORACIONES EN LA INDUSTRIA DEL DISEÑO DE INTERIORES</p>
+            <p class="bannerBottomText">MILES DE PRODUCTOS DISPONIBLES PARA DECORAR TU HOGAR</p>
         </div>
     </header>
     <main>
+        <div class="overlay"></div>
         <section class="hero">
             <div class="sliderImg">
-                <img src="./assets/img/uM7HeqtGFpuaGhcDkdsMi3-1920x500.png" alt="slider" class="slider">
+                <!-- <img src="./assets/img/uM7HeqtGFpuaGhcDkdsMi3-1920x500.png" alt="slider" class="slider"> -->
+                <div class="splitview skewed">
+                    <div class="panel bottom">
+                        <div class="content">
+                            <img src="./assets/img/uM7HeqtGFpuaGhcDkdsMi3-1920x500.png" alt="Original Imagen">
+                        </div>
+                    </div>
+            
+                    <div class="panel top">
+                        <div class="content">
+                          <img src="./assets/img/spacejoy-q3Qd86sfaoU-unsplash3.jpg" alt="Split Imagen">
+                        </div>
+                    </div>
+                    <div class="handle"></div>
+                </div>
             </div>
-            <div class="heroBottom">
+            <div class="heroBottom" id="categoriaFilter">
                 <div class="heroTitle centerAlignFlex">
-                    <p class="mainTitle">CONSIGUE LAS MEJORES COLECCIONES DEL MOMENTO</p>
+                    <p class="mainTitle lineAnimated">CONSIGUE LOS MEJORES PRODUCTOS</p>
                 </div>
                 <div class="filterProducts">
-                    <div class="sillones">
-                        <img class="imageProductFilter dropShadow" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Sillones Filtro">
-                        <p class="productInfoFilter centerAlignFlex">SILLONES</p>
-                    </div>
-                    <div class="camas">
-                        <img class="imageProductFilter dropShadow" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Camas Filtro">
-                        <p class="productInfoFilter centerAlignFlex">CAMAS</p>
-                    </div>
-                    <div class="mesas">
-                        <img class="imageProductFilter dropShadow" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Mesas Filtro">
-                        <p class="productInfoFilter centerAlignFlex">MESAS</p>
-                    </div>
-                    <div class="sillas">
-                        <img class="imageProductFilter dropShadow" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Sillas Filtro">
-                        <p class="productInfoFilter centerAlignFlex">SILLAS</p>
-                    </div>
+                    <button class="category animatedDiv active">
+                        <img class="category imageProductFilter dropShadow animatedDiv" src="./assets/img/030822-SBS-MidCenMod.webp" alt="Sillones Filtro">
+                        <p class="category productInfoFilter centerAlignFlex">TODO</p>
+                    </button>
+                    <button class="category animatedDiv" data-category="sofas">
+                        <img class="category imageProductFilter dropShadow animatedDiv"data-category="sofas"  src="./assets/img/288x2885.jpg" alt="Sillones Filtro">
+                        <p class="category productInfoFilter centerAlignFlex" data-category="sofas">SOFAS</p>
+                    </button>
+                    <button class="category animatedDiv" data-category="camas">
+                        <img class="category imageProductFilter dropShadow animatedDiv"data-category="camas"  src="./assets/img/288x2884.jpg" alt="Camas Filtro">
+                        <p class="category productInfoFilter centerAlignFlex" data-category="camas">CAMAS</p>
+                    </button>
+                    <button class="category animatedDiv" data-category="mesas">
+                        <img class="category imageProductFilter dropShadow animatedDiv" data-category="mesas" src="./assets/img/288x288.jpg" alt="Mesas Filtro">
+                        <p class="category productInfoFilter centerAlignFlex" data-category="mesas">MESAS</p>
+                    </button>
+                    <button class="category animatedDiv" data-category="sillas">
+                        <img class="category imageProductFilter dropShadow animatedDiv"data-category="sillas"  src="./assets/img/288x2881.jpg" alt="Sillas Filtro">
+                        <p class="category productInfoFilter centerAlignFlex" data-category="sillas">SILLAS</p>
+                    </button>
                 </div>
             </div>
         </section>
         <section class="productsContainer">
-            <p class="productsTitle">PRODUCTOS DISPONIBLES</p>
+            <p class="productsTitle lineAnimated">PRODUCTOS DISPONIBLES</p>
             <div class="productCardsContainer">
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
-                <div class="productCard dropShadow">
-                    <img class="imageProductCard" src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto">
-                    <p class="productTitle">ARTICULO 1</p>
-                    <div class="productDetail">
-                        <div class="productInforLeft">
-                            <p class="productPriceText">PRECIO</p>
-                            <p class="productPriceSet">$120.00</p>
-                        </div>
-                        <div class="productInfoRight">
-                            <p class="productQuantityText">DISPONIBLES</p>
-                            <p class="productQuantityLeft">15</p>
-                        </div>
-                    </div>
-                    <button class="addCart">AGREGAR AL CARRITO</button>
-                </div>
+                <!--RENDER PRODUCTS FUNCTION-->
             </div>
+            <button class="bntLoad moreButton slideAnimatedSub" id="btnLoad">Ver más</button>
         </section>
-        <section class="previewProducts">
-            <div class="imagePreview">
-                <img src="./assets/img/uM7HeqtGFpuaGhcDkdsMi3-920x850.png" alt="Imagen Izquierda" class="imageLeft">
-                <img src="./assets/img/uM7HeqtGFpuaGhcDkdsMi3-920x850.png" alt="Imagen Derecha" class="imageRight">
-            </div>
+        <section class="galleryProducts" id="galeria">
+            <p class="galleryTitle lineAnimated">EXPOSICIONES</p>
+            <p class="gallerySubtitle">COLECCIONES PARA CADA ESTACIÓN</p>
+            <div class="container">
+                <div class="box">
+                    <img src="./assets/img/slate-gray-bedroom-860x690.png">
+                    <span>PRIMAVERA</span>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/modern-double-bedroom-designs-860x690.png">
+                    <span>VERANO</span>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/vertical-stripe-design-860x690.png">
+                    <span>OTOÑO</span>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/Modern-Bedroom-Interior-Design-860x690.png">
+                    <span>INVIERNO</span>
+                </div>
+              </div>
         </section>
-        <section class="storeLocation centerColumnFlex">
+        <section class="storeLocation centerColumnFlex" id="locales">
             <div class="storeText centerColumnFlex">
-                <p class="storeTitle">NUESTROS LOCALES</p>
+                <p class="storeTitle lineAnimated">NUESTROS LOCALES</p>
                 <p class="storeSubtitle">ENCONTRÁ TU TIENDA MÁS CERCANA</p>
             </div>
             <div class="storeInfo">
@@ -291,174 +149,92 @@
     </main>
     <footer>
         <div class="subscribeBanner">
-            <p class="subscribeTitle">SUSCRIBETE GRATIS PARA FUTURAS COLECCIONES</p>
+            <p class="subscribeTitle lineAnimated">SUSCRIBETE GRATIS PARA FUTURAS COLECCIONES</p>
             <div class="subscribeInput">
                 <input class="subscribeEmail" type="email" placeholder="CORREO ELECTRONICO" name="" id="subscribeEmail">
-                <button class="subscribeButton">SUBSCRÍBETE</button>
+                <button class="subscribeButton slideAnimatedSub">SUBSCRÍBETE</button>
             </div>
         </div>
         <div class="footerLinks">
             <div class="linkHelp">
                 <p class="linkHelpText">AYUDA</p>
                 <ul class="helpLinkList">
-                    <li class="helpLink">CONTACTANOS</li>
-                    <li class="helpLink">COMPRAS</li>
-                    <li class="helpLink">EXCHANGE</li>
-                    <li class="helpLink">COMO COMPRAR</li>
+                    <li class="helpLink animatedDivShort"><a href="#">CONTACTANOS</a></li>
+                    <li class="helpLink animatedDivShort"><a href="#">COMPRAS</a></li>
+                    <li class="helpLink animatedDivShort"><a href="#">EXCHANGE</a></li>
+                    <li class="helpLink animatedDivShort"><a href="#">COMO COMPRAR</a></li>
                 </ul>
             </div>
             <div class="linkCompany">
                 <p class="linkCompanyText">COMPAÑÍA</p>
                 <ul class="companyLinkList">
-                    <li class="companyLink">REFERIR A UN AMIGO</li>
-                    <li class="companyLink">PROGRAMA PARTNER</li>
-                    <li class="companyLink">AFILIADOS</li>
-                    <li class="companyLink">BLOG</li>
+                    <li class="companyLink animatedDivShort"><a href="#">REFERIR A UN AMIGO</a></li>
+                    <li class="companyLink animatedDivShort"><a href="#">PROGRAMA PARTNER</a></li>
+                    <li class="companyLink animatedDivShort"><a href="#">AFILIADOS</a></li>
+                    <li class="companyLink animatedDivShort"><a href="#">BLOG</a></li>
                 </ul>
             </div>
         </div>
         <div class="socialMedia">
-            <p class="socialText">REDES SOCIALES</p>
+            <p class="socialText lineAnimated">REDES SOCIALES</p>
             <div class="socialLogos">
-                <img src="./assets/img/facebook100x100.png" alt="Facebook Logo" class="logos logoFacebook">
-                <img src="./assets/img/instagram100x100.png" alt="Instagram Logo" class="logos logoInstagram">
-                <img src="./assets/img/twitter100x100.png" alt="Twitter Logo" class="logos logoTwitter">
-                <img src="./assets/img/youtube100x100.png" alt="Youtube Logo" class="logos logoYoutube">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/facebook100x100.png" alt="Facebook Logo" class="logos logoFacebook animatedDiv"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/instagram100x100.png" alt="Instagram Logo" class="logos logoInstagram animatedDiv"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="./assets/img/twitter100x100.png" alt="Twitter Logo" class="logos logoTwitter animatedDiv"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/youtube100x100.png" alt="Youtube Logo" class="logos logoYoutube animatedDiv"></a>
             </div>
         </div>
     </footer>
-    <div class="cartContainer">
-        <div class="cartTop">
-            <p class="cartTitle">MI CARRITO</p>
-            <i class="fa-solid fa-x fa-lg cartClose"></i>
-        </div>
-        <div class="cartSlice">
-            <p class="textCartDisplay">PRODUCTOS AGREGADOS</p>
-        </div>
-        <div class="cartMedium">
-            <div class="cartProduct">
-                <img src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto" class="cartImageProduct">
-                <div class="cartDetail">
-                    <div class="topCartInfo">
-                        <i class="fa-solid fa-trash deleteCart fa-lg"></i>
-                    </div>
-                    <div class="mediumCartInfo">
-                        <p class="cartProductName">ARTICULO 1</p>
-                    </div>
-                    <div class="lowerCartInfo">
-                        <div class="quantityInfo">
-                            <p class="quantityTitle">CANTIDAD</p>
-                            <div class="quantityInput">
-                                <i class="fa-solid fa-minus quantityMinus"></i>
-                                <p class="quantityCounter">1</p>
-                                <i class="fa-solid fa-plus quantityPlus"></i>
-                            </div>
-                        </div>
-                        <div class="priceInfo">
-                            <p class="priceTitle">PRECIO</p>
-                            <p class="priceCounter">$120.00</p>
-                        </div>
-                    </div>
+    <div class="cart">
+        <div class="cartContainer">
+            <div class="cartTop">
+                <p class="cartTitle">MI CARRITO</p>
+                <i class="fa-solid fa-x fa-lg cartClose"></i>
+            </div>
+            <div class="cartSlice">
+                <p class="textCartDisplay">PRODUCTOS AGREGADOS</p>
+            </div>
+            <div class="cartMedium">
+                <!-- RENDER CART FUNCTION -->
+            </div>
+            <div class="subtotalContainer">
+                <p class="subtotalText">SUBTOTAL:</p>
+                <div class="textBoxPrices">
+                    <p>ARS $</p><span class="subtotalPrice">0.00</span>
                 </div>
             </div>
-            <div class="cartProduct">
-                <img src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto" class="cartImageProduct">
-                <div class="cartDetail">
-                    <div class="topCartInfo">
-                        <i class="fa-solid fa-trash deleteCart fa-lg"></i>
-                    </div>
-                    <div class="mediumCartInfo">
-                        <p class="cartProductName">ARTICULO 1</p>
-                    </div>
-                    <div class="lowerCartInfo">
-                        <div class="quantityInfo">
-                            <p class="quantityTitle">CANTIDAD</p>
-                            <div class="quantityInput">
-                                <i class="fa-solid fa-minus quantityMinus"></i>
-                                <p class="quantityCounter">1</p>
-                                <i class="fa-solid fa-plus quantityPlus"></i>
-                            </div>
-                        </div>
-                        <div class="priceInfo">
-                            <p class="priceTitle">PRECIO</p>
-                            <p class="priceCounter">$120.00</p>
-                        </div>
-                    </div>
+            <div class="cartEnvio">
+                <p>ENVÍO:</p>
+                <div class="textBoxPrices">
+                    <p class="signoPeso">ARS $</p><span class="envio">350.00</span>
                 </div>
             </div>
-            <div class="cartProduct">
-                <img src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto" class="cartImageProduct">
-                <div class="cartDetail">
-                    <div class="topCartInfo">
-                        <i class="fa-solid fa-trash deleteCart fa-lg"></i>
-                    </div>
-                    <div class="mediumCartInfo">
-                        <p class="cartProductName">ARTICULO 1</p>
-                    </div>
-                    <div class="lowerCartInfo">
-                        <div class="quantityInfo">
-                            <p class="quantityTitle">CANTIDAD</p>
-                            <div class="quantityInput">
-                                <i class="fa-solid fa-minus quantityMinus"></i>
-                                <p class="quantityCounter">1</p>
-                                <i class="fa-solid fa-plus quantityPlus"></i>
-                            </div>
-                        </div>
-                        <div class="priceInfo">
-                            <p class="priceTitle">PRECIO</p>
-                            <p class="priceCounter">$120.00</p>
-                        </div>
-                    </div>
+            <div class="cartBottom">
+                <div class="insuranceContainer">
+                    <p class="insuranceTitle">GARANTÍA ADICIONAL X 12 MESES</p>
+                    <i class="fa-sharp fa-solid fa-2x fa-house-circle-check insuranceIcon"></i>
+                    <div class="priceInsDiv"><p>ARS $</p><span class="insurancePrice">120.00</span></div>
+                    <button class="insuranceAdd slideAnimatedAdd">AGREGAR</button>
                 </div>
             </div>
-                        <div class="cartProduct">
-                <img src="./assets/img/modern-double-bedroom-designs-500x500.png" alt="Imagen Producto" class="cartImageProduct">
-                <div class="cartDetail">
-                    <div class="topCartInfo">
-                        <i class="fa-solid fa-trash deleteCart fa-lg"></i>
-                    </div>
-                    <div class="mediumCartInfo">
-                        <p class="cartProductName">ARTICULO 1</p>
-                    </div>
-                    <div class="lowerCartInfo">
-                        <div class="quantityInfo">
-                            <p class="quantityTitle">CANTIDAD</p>
-                            <div class="quantityInput">
-                                <i class="fa-solid fa-minus quantityMinus"></i>
-                                <p class="quantityCounter">1</p>
-                                <i class="fa-solid fa-plus quantityPlus"></i>
-                            </div>
-                        </div>
-                        <div class="priceInfo">
-                            <p class="priceTitle">PRECIO</p>
-                            <p class="priceCounter">$120.00</p>
-                        </div>
+            <div class="totalCheckContainer">
+                <div class="totalContainer">
+                    <p class="totalTitle">TOTAL A PAGAR:</p>
+                    <div class="textBoxPrices">
+                        <p>ARS $</p><span class="totalPrice">0.00</span>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="subtotalContainer">
-            <p class="subtotalText">SUBTOTAL:</p>
-            <P class="subtotalPrice">$120.00</P>
-        </div>
-        <div class="cartBottom">
-            <div class="insuranceContainer">
-                <p class="insuranceTitle">GARANTÍA ADICIONAL X 12 MESES</p>
-                <i class="fa-sharp fa-solid fa-2x fa-house-circle-check insuranceIcon"></i>
-                <p class="insurancePrice">$120.00</p>
-                <button class="insuranceAdd">AGREGAR</button>
-            </div>
-        </div>
-        <div class="totalCheckContainer">
-            <div class="totalContainer">
-                <p class="totalTitle">TOTAL A PAGAR:</p>
-                <p class="totalPrice">$240.00</p>
-            </div>
-            <div class="checkoutContainer">
-                <button class="cartCheckout">CHECKOUT</button>
+                <div class="deleteContainer">
+                    <button class="deleteCart slideAnimatedInvert">VACIAR CARRITO</button>
+                </div>
+                <div class="checkoutContainer">
+                    <button class="cartCheckout slideAnimatedCheckout">CHECKOUT</button>
+                </div>
             </div>
         </div>
     </div>
-    <script src="main.js" type="module"></script>
+    <div class="addModal"></div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

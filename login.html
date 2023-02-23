@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E&E Furnitures</title>
+</head>
+<body>
+    <header>
+        <div class="bannerTop centerAlignFlex">
+            <p class="bannerTopText">REVISA NUESTRAS MAS RECIENTES COLABORACIONES EN LA INDUSTRIA DEL DISEÑO DE INTERIORES</p>
+        </div>
+        <nav class="navbar" id="navbar">
+            <div class="logoContainer centerAlignFlex">
+                <a href="./index.html" class="lineAnimated"><img src="./assets/img/logoeye.png" alt="Logo Compañia" class="logoCompany"></a>
+            </div>
+            <ul class="navbarList">
+                <li class="home"><a href="./index.html" class="lineAnimated">HOME</a></li>
+                <li class="category"><a href="./index.html#categoriaFilter" class="lineAnimated">CATEGORÍAS</a></li>
+                <li class="localStores"><a href="./index.html#locales" class="lineAnimated">LOCALES</a></li>
+                <li class="gallery"><a href="./index.html#galeria" class="lineAnimated">EXPOSICIONES</a></li>
+                <li class="contact"><a href="#" class="lineAnimated">CONTACTO</a></li>
+                <li class="about"><a href="#" class="lineAnimated">NOSOTROS</a></li>
+            </ul>
+            <div class="panelUser">
+                <div class="accountOption">
+                    <a href="./login.html" class="lineAnimated hoverPanel"><i class="fa-solid fa-user fa-lg">   LOGIN</i></a>
+                    <a href="./register.html" class="lineAnimated hoverPanel"><p class="registerText">REGISTRARSE</p></a>
+                </div>
+            </div>
+            <div class="menuLabel">
+                <img src="./assets/img/menu.png" alt="" class="menuIcon" />
+              </div>
+        </nav>
+        <div class="bannerBottom centerAlignFlex">
+            <p class="bannerBottomText">REVISA NUESTRAS MAS RECIENTES COLABORACIONES EN LA INDUSTRIA DEL DISEÑO DE INTERIORES</p>
+        </div>
+    </header>
+    <main>
+        <div class="overlay"></div>
+        <section class="loginSection">
+            <form class="formContainer" id="form" novalidate>
+                <p class="formField formTitle"> INICIAR SESIÓN </p>
+                <div class="formField">
+                  <input type="text" placeholder="Username" class="formInput" id="username" autocomplete="off" />
+                  <small></small>
+                </div>
+                <div class="formField">
+                  <input type="password" placeholder="Password" class="formInput" id="password" autocomplete="off" />
+                  <small></small>
+                </div>
+                <input type="submit" class="formSubmitBtn slideAnimatedSub" value="INGRESAR"/> <!-- form__submit__btn -->
+              </form>
+        </section>
+    </main>
+    <footer>
+        <div class="subscribeBanner">
+            <p class="subscribeTitle lineAnimated">SUSCRIBETE GRATIS PARA FUTURAS COLECCIONES</p>
+            <div class="subscribeInput">
+                <input class="subscribeEmail" type="email" placeholder="CORREO ELECTRONICO" name="" id="subscribeEmail">
+                <button class="subscribeButton slideAnimatedSub">SUBSCRÍBETE</button>
+            </div>
+        </div>
+        <div class="footerLinks">
+            <div class="linkHelp">
+                <p class="linkHelpText">AYUDA</p>
+                <ul class="helpLinkList">
+                    <li class="helpLink animatedDivShort"><a href="#">CONTACTANOS</a></li>
+                    <li class="helpLink animatedDivShort"><a href="#">COMPRAS</a></li>
+                    <li class="helpLink animatedDivShort"><a href="#">EXCHANGE</a></li>
+                    <li class="helpLink animatedDivShort"><a href="#">COMO COMPRAR</a></li>
+                </ul>
+            </div>
+            <div class="linkCompany">
+                <p class="linkCompanyText">COMPAÑÍA</p>
+                <ul class="companyLinkList">
+                    <li class="companyLink animatedDivShort"><a href="#">REFERIR A UN AMIGO</a></li>
+                    <li class="companyLink animatedDivShort"><a href="#">PROGRAMA PARTNER</a></li>
+                    <li class="companyLink animatedDivShort"><a href="#">AFILIADOS</a></li>
+                    <li class="companyLink animatedDivShort"><a href="#">BLOG</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="socialMedia">
+            <p class="socialText lineAnimated">REDES SOCIALES</p>
+            <div class="socialLogos">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/facebook100x100.png" alt="Facebook Logo" class="logos logoFacebook animatedDiv"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/instagram100x100.png" alt="Instagram Logo" class="logos logoInstagram animatedDiv"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="./assets/img/twitter100x100.png" alt="Twitter Logo" class="logos logoTwitter animatedDiv"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/youtube100x100.png" alt="Youtube Logo" class="logos logoYoutube animatedDiv"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>
