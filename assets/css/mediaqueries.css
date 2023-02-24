@@ -1,3 +1,13 @@
+@media (max-width: 1600px){
+    .splitview {
+        position: relative;
+        width: 100%;
+        min-height: 390px;
+        overflow: hidden;
+        z-index: 0;
+    }
+}
+
 @media (max-width: 1441px) {
     .splitview{
         min-height: 350px;
@@ -34,6 +44,10 @@
 @media (max-width: 1281px) {
     .subscribeTitle {
         font-size: 1rem;
+    }
+
+    .splitview {
+        min-height: 335px;
     }
 
     .subscribeEmail {
