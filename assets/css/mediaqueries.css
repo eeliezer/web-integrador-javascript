@@ -354,3 +354,21 @@
         width: 17%;
     }
 }
+
+@media (max-width: 376px) {
+    .splitview {
+        min-height: 95px;
+    }
+
+    .panel {
+        margin-left: 0px;
+    }
+
+    .imageProductFilter {
+        height: 50px;
+    }
+
+    .filterProducts p {
+        font-size: 14px;
+    }
+}
