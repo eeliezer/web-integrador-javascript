@@ -212,6 +212,14 @@
 
 }
 
+@media (max-width: 811px){
+    .splitview {
+        min-height: 200px;
+    }
+    .heroTitle {
+        font-size: 36px;
+    }
+}
 
 @media (max-width: 577px){
     .splitview {
@@ -220,5 +228,89 @@
 
     .heroTitle {
         font-size: 26px;
+    }
+}
+
+@media (max-width: 481px){
+    .splitview {
+        min-height: 120px;
+    }
+
+    .heroTitle {
+        font-size: 36px;
+    }
+
+    .logoCompany {
+        height: 25px;
+    }
+
+    .panel {
+        margin-left: 50px;
+      }
+
+    .heroTitle {
+        font-size: 16px;
+    }
+
+    .filterProducts {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageProductFilter {
+        height: 80px;
+    }
+
+    .productsTitle {
+        font-size: 26px;
+    }
+
+    .galleryTitle {
+        font-size: 26px;
+    }
+
+    .gallerySubtitle {
+        font-size: 20px;
+    }
+
+    .storeTitle {
+        font-size: 26px;
+    }
+
+    .storeSubtitle {
+        font-size: 20px;
+    }
+
+    .storeMap iframe {
+        width: 350px;
+        height: 350px;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .box > img {
+        width: 200%;
+        height: calc(100% - 7vh);
+        object-fit: cover;
+        transition: .5s;
+        margin-top: 10px;
+    }
+
+    .box > span {
+        font-size: 2.8vh;
+        display: block;
+        text-align: center;
+        height: 5vh;
+        line-height: 2;
     }
 }
