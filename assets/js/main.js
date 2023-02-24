@@ -368,7 +368,7 @@ const init = () =>{
 
 window.addEventListener('scroll', function(e) {
     navbar = document.getElementById('navbar');
-    navbar.classList.toggle('scrolling', window.scrollY > 120); 
+    navbar.classList.toggle('scrolling', window.scrollY > 100); 
 });
 
 init();
@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   parent.addEventListener('mousemove', function(event) {
-      delta = (event.clientX - window.innerWidth / 2) * 0.3;
+      delta = (event.clientX - window.innerWidth / 2) * 0.6;
       handle.style.left = event.clientX + delta + 'px';
       topPanel.style.width = event.clientX + skewHack + delta + 'px';
   });

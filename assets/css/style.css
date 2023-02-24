@@ -7,12 +7,22 @@
     box-sizing: border-box;
 }
 
-/* main{
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+}
+
+main{
     max-width: 1600px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-} */
+}
 
 a{
     text-decoration: none;
@@ -157,7 +167,7 @@ a{
 .navbar{
     display: flex;
     flex-direction: row;
-    height: 80px;
+    height: 60px;
     background: var(--header-bg-color);
     justify-content: space-between;
     align-items: center;
@@ -230,6 +240,7 @@ a{
 
 .hero{
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -239,6 +250,7 @@ a{
 
 .sliderImg{
     height: 100%;
+    width: 100%;
 }
 
 .slider{
@@ -365,6 +377,7 @@ a{
 .storeLocation{
     background-color: #FCFCFC;
     height: 750px;
+    width: 100%;
 }
 
 .storeTitle{
@@ -897,7 +910,7 @@ footer{
  
 .overlay {
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 0;
     height: 675vh;
     width: 100%;
@@ -1010,7 +1023,6 @@ footer{
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
 }
 
-/* Handle. */
 .handle {
     height: 100%;
     position: absolute;
@@ -1022,10 +1034,9 @@ footer{
     z-index: 2;
 }
 
-/* Skewed. */
 .skewed .handle {
     top: 50%;
-    margin-left: 5%;
+    margin-left: 6%;
     transform: rotate(30deg) translateY(-50%);
     height: 200%;
     -webkit-transform-origin: top;

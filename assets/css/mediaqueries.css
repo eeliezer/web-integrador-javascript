@@ -1,4 +1,48 @@
-@media (max-width: 1000px) {
+@media (max-width: 1441px) {
+    .splitview{
+        min-height: 350px;
+    }
+
+    .logos{
+        width: 80px;
+    }
+
+    .subscribeTitle {
+        font-size: 1.10rem;
+    }
+
+    .subscribeEmail {
+        width: 300px;
+    }
+
+    .storeMap iframe {
+        width: 750px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1367px) {
+    .skewed .handle {
+        margin-left: 5%;
+    }
+
+    .subscribeEmail {
+        width: 295px;
+    }
+}
+
+@media (max-width: 1281px) {
+    .subscribeTitle {
+        font-size: 1rem;
+    }
+
+    .subscribeEmail {
+        width: 270px;
+    }
+}
+
+
+@media (max-width: 1025px) {
   
     header{
         position: fixed;
@@ -6,6 +50,10 @@
         height: 80px;
         background-color: white;
         z-index: 2;
+    }
+
+    .splitview {
+        min-height: 265px;
     }
 
     .bannerTop{
@@ -37,6 +85,7 @@
     }
 
     .navbar {
+        height: 80px;
         gap: 10px;
         justify-content: space-around;
         background-color: white;
@@ -83,6 +132,10 @@
         top: 80px;
     }
 
+    .cartOption {
+        width: 25%;
+    }
+
     .openMenu {
         opacity: 1;
         top: 80px;
@@ -95,13 +148,77 @@
         height: 880vh;
     }
 
+    .filterProducts p {
+        font-size: 24px;
+    }
+
+    .storeMap iframe {
+        width: 500px;
+        height: 400px;
+    }
+
+    .subscribeTitle {
+        font-size: 0.8rem;
+    }
+
+    .subscribeEmail {
+        width: 175px;
+        font-size: 0.8rem;
+    }
+
+    .subscribeButton {
+        font-size: 0.8rem;
+    }
+
+    .linkHelp {
+        font-size: 0.8rem;
+    }
+
+    .linkCompany {
+        font-size: 0.8rem;
+    }
+
+    .socialLogos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 811px){
+    .splitview {
+        min-height: 210px;
+    }
+
+    .storeInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .storeMap {
+        margin-top: 50px;
+    }
+
+    footer {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 }
 
 
-@media (max-width: 576px){
+@media (max-width: 577px){
+    .splitview {
+        min-height: 150px;
+    }
 
-}
-
-@media (max-width: 450px){
-
+    .heroTitle {
+        font-size: 26px;
+    }
 }
