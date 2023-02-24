@@ -16,7 +16,8 @@ const listadoDeProductos = [
       cantidad: 45,
       category: 'camas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 3,
       nombre: 'Accent Chair Upholstered',
       precio: 65000,
@@ -24,7 +25,8 @@ const listadoDeProductos = [
       cantidad: 90,
       category: 'sillas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 4,  
       nombre: 'Industrial Dining Table Set',
       precio: 75000,
@@ -32,7 +34,8 @@ const listadoDeProductos = [
       cantidad: 50,
       category: 'mesas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 5,
       nombre: 'BIKAHOM Mid Century Modern Solid Wooden', 
       precio: 85000,
@@ -40,7 +43,8 @@ const listadoDeProductos = [
       cantidad: 30,
       category: 'camas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 6,
       nombre: 'Francie Mid Century Modern',
       precio: 90500,
@@ -48,7 +52,8 @@ const listadoDeProductos = [
       cantidad: 85,
       category: 'mesas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 7,
       nombre: 'Aston Modern Solid Chair',
       precio: 80000, 
@@ -56,7 +61,8 @@ const listadoDeProductos = [
       cantidad: 100,
       category: 'sillas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 8,
       nombre: 'Chesterfield Seater Sofa',
       precio: 10000,
@@ -64,7 +70,8 @@ const listadoDeProductos = [
       cantidad: 95,
       category: 'sofas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 9,
       nombre:'Grain Wood Furniture',
       precio: 80500,
@@ -72,7 +79,8 @@ const listadoDeProductos = [
       cantidad: 70,
       category: 'camas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 10,
       nombre: 'HOMCOM Rustic Country Wood',
       precio: 90000,
@@ -80,7 +88,8 @@ const listadoDeProductos = [
       cantidad: 60,
       category: 'mesas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 11,
       nombre: 'Carbon Loft Hofstetler',
       precio: 11500,
@@ -88,7 +97,8 @@ const listadoDeProductos = [
       cantidad: 80,
       category: 'sillas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 12,
       nombre: 'Futzca Convertible Sectional Sofa',
       precio: 12000,
@@ -96,7 +106,8 @@ const listadoDeProductos = [
       cantidad: 92,
       category: 'sofas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 13,
       nombre: 'Grain Wood Furniture Montauk',
       precio: 12000,
@@ -104,7 +115,8 @@ const listadoDeProductos = [
       cantidad: 90,
       category: 'camas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 14,
       nombre: 'Lifestorey Lydon Dining',
       precio: 12000,
@@ -112,7 +124,8 @@ const listadoDeProductos = [
       cantidad: 81,
       category: 'mesas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 15,
       nombre: 'High Back Solid Wood',
       precio: 40000,
@@ -120,7 +133,8 @@ const listadoDeProductos = [
       cantidad: 100,
       category: 'sillas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 16,
       nombre: 'Jaxx Zipline Queen size Convertible',
       precio: 90000,
@@ -128,7 +142,8 @@ const listadoDeProductos = [
       cantidad: 75,
       category: 'sofas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 17,
       nombre: 'Grain Wood Furniture Shaker',
       precio: 7900 ,
@@ -136,7 +151,8 @@ const listadoDeProductos = [
       cantidad: 62,
       category: 'camas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 18,
       nombre: 'Simple Living Baxter Dining',
       precio: 9900,
@@ -144,7 +160,8 @@ const listadoDeProductos = [
       cantidad: 94,
       category: 'mesas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 20,
       nombre: 'Kassi Contemporary Slipper',
       precio: 5000,
@@ -152,7 +169,8 @@ const listadoDeProductos = [
       cantidad: 93,
       category: 'sillas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 21,
       nombre: 'Morden Fort Couches',
       precio: 40500,
@@ -161,7 +179,8 @@ const listadoDeProductos = [
       category: 'sofas',
       descripcion: 'DESCRIPCION',
   
-    },{
+    },
+    {
       id: 22,
       nombre: 'Kotter Home Kayson Metal',
       precio: 40500,
@@ -169,7 +188,8 @@ const listadoDeProductos = [
       cantidad: 77,
       category: 'camas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 23,
       nombre: 'Simple Living Country Cottage',
       precio: 75000,
@@ -177,7 +197,8 @@ const listadoDeProductos = [
       cantidad: 10,
       category: 'mesas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 24,
       nombre: 'Mid Century Accent Armchair',
       precio: 89600,
@@ -185,7 +206,8 @@ const listadoDeProductos = [
       cantidad: 64,
       category: 'sillas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 25,
       nombre: 'Sofa Bed Sleeper Purple',
       precio: 31000,
@@ -193,7 +215,8 @@ const listadoDeProductos = [
       cantidad: 30,
       category: 'sofas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 26,
       nombre: 'Kotter Home Solid Wood',
       precio: 55000,
@@ -201,7 +224,8 @@ const listadoDeProductos = [
       cantidad: 78,
       category: 'camas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 27,
       nombre: 'Simple Living Knox',
       precio: 57800,
@@ -209,7 +233,8 @@ const listadoDeProductos = [
       cantidad: 53,
       category: 'mesas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 28,
       nombre: 'Moser Bay Mignon',
       precio: 10560,
@@ -217,7 +242,8 @@ const listadoDeProductos = [
       cantidad: 43,
       category: 'sillas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 29,
       nombre: 'StocktoN Sofa by Bush Furniture',
       precio: 25000,
@@ -225,7 +251,8 @@ const listadoDeProductos = [
       cantidad: 34,
       category: 'sofas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 30,
       nombre: 'Porch Den Bayview Charcoal Grey',
       precio: 85000,
@@ -233,7 +260,8 @@ const listadoDeProductos = [
       cantidad: 64,
       category: 'camas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 31,
       nombre: 'Simple Living Templetont',
       precio: 18000,
@@ -241,7 +269,8 @@ const listadoDeProductos = [
       cantidad: 25,
       category: 'mesas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 32,
       nombre: 'Quentin High Back Club Chair',
       precio: 89750,
@@ -249,7 +278,8 @@ const listadoDeProductos = [
       cantidad: 10,
       category: 'sillas',
       descripcion: 'DESCRIPCION',
-    },{
+    },
+    {
       id: 33,
       nombre: 'Three Seats Without Chaise',
       precio: 67800,
@@ -263,8 +293,8 @@ const listadoDeProductos = [
 const splitProducts = size => {
     let dividedProducts = [];
     for (let i = 0; i < listadoDeProductos.length; i += size)
-        dividedProducts.push(listadoDeProductos.slice(i, i + size))
-        return dividedProducts;
+      dividedProducts.push(listadoDeProductos.slice(i, i + size))
+      return dividedProducts;
 };
 
 const productsController = {

@@ -38,6 +38,7 @@ a{
     --main-text-color: black;
     --alt-text-color: white;
     --hover-text-color: rgba(0, 0, 0, 0.3);
+    --c: linear-gradient(#000 0 0);
 }
 
 .animatedDiv{
@@ -77,8 +78,6 @@ a{
 }
 
 .lineAnimated{
-    --c:linear-gradient(#000 0 0); /* update the color here */
-    
     padding-bottom: .15em;
     background: var(--c), var(--c);
     background-size: .3em .1em;
@@ -116,12 +115,12 @@ a{
 }
 
 .slideAnimatedInvert{
-        box-shadow: inset 0 0 0 0 black;
-        color: black;
-        margin: 0 -0.25rem;
-        padding: 0 0.25rem;
-        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    }
+    box-shadow: inset 0 0 0 0 black;
+    color: black;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
 
 .slideAnimatedInvert:hover{
     box-shadow: inset 150px 0 0 0 black;
@@ -845,8 +844,6 @@ footer{
     color: black;
 }
 
-/*//////////////////////*/
-
 .galleryProducts{
     background: var(--alt-bg-color);
     display: flex;
@@ -875,14 +872,14 @@ footer{
 }
 
 .box {
-  flex: 1;
-  overflow: hidden;
-  transition: .5s;
-  margin: 0 2%;
-  /*box-shadow: 0 20px 30px rgba(0,0,0,.1);*/
-  line-height: 2;
-  border-radius: 5px;
-  /*background-color: var(--main-bg-color);*/
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    /*box-shadow: 0 20px 30px rgba(0,0,0,.1);*/
+    line-height: 2;
+    border-radius: 5px;
+    /*background-color: var(--main-bg-color);*/
 }
 
 
@@ -894,18 +891,20 @@ footer{
 }
 
 .box > span {
-  font-size: 2.8vh;
-  display: block;
-  text-align: center;
-  height: 5vh;
-  line-height: 2.6;
+    font-size: 2.8vh;
+    display: block;
+    text-align: center;
+    height: 5vh;
+    line-height: 2.6;
 }
 
-.box:hover { flex: 1 1 50%; }
+.box:hover { 
+    flex: 1 1 50%;
+}
 
 .box:hover > img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
  
 .overlay {
@@ -992,21 +991,21 @@ footer{
     overflow: hidden;
 }
 
-    .panel .content {
-        position: absolute;
-        width: 100vw;
-        min-height: 45vw;
-        color: #FFF;
-    }
+.panel .content {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    color: #FFF;
+}
 
-    .panel img {
-        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
-        width: 100%;
-        position: absolute;
-        top: 29%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.panel img {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 .bottom {

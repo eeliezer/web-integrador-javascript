@@ -1,4 +1,3 @@
-// declarar variables
 const form = document.getElementById('form');
 const nameInput = document.getElementById('username');
 const emailInput = document.getElementById('email');
@@ -6,7 +5,6 @@ const passInput = document.getElementById('password');
 const phoneInput = document.getElementById('phone');
 const formSubmitBtn = document.querySelector('.form__submit__btn');
 
-// evaluamos username
 const checkUsername = () => {
   let valid = false;
   const min = 3;
@@ -23,7 +21,6 @@ const checkUsername = () => {
   return valid
 }
 
-// evaluamos Email
 const checkEmail = () => {
   let valid = false;
   const emailValue = emailInput.value.trim();
@@ -38,7 +35,6 @@ const checkEmail = () => {
   return valid
 }
 
-// evaluar password
 const checkPassword = () => {
   let valid = false;
   const password = passInput.value.trim();
@@ -53,7 +49,6 @@ const checkPassword = () => {
   return valid;
 }
 
-// evaluar phone
 const checkPhone = () => {
   let valid = false;
   const phoneValue = phoneInput.value.trim();
@@ -102,19 +97,12 @@ const showSuccess = (input) => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  // valido cada input
   const isUsernameValid = checkUsername();
   const isEmailValid = checkEmail();
   const isPasswordValid = checkPassword();
   const isPhoneValid = checkPhone();
-  console.log(isUsernameValid)
-  console.log(isEmailValid)
-  console.log(isPasswordValid)
-  console.log(isPhoneValid)
-  // valido el form
   const isFormValid = isUsernameValid && isEmailValid && isPasswordValid && isPhoneValid;
   if(isFormValid) {
-    /* form.submit(); */
     setTimeout(() => {
       location.href="index.html";
     }, 1000);
@@ -124,10 +112,7 @@ form.addEventListener('submit', (e) => {
 const debounce = (fn, delay = 1000) => {
   let timeoutId;
   return (...args) => {
-    // cancelar el timer anterior
     if(timeoutId) clearTimeout(timeoutId);
-
-    //seteamos un nuevo timer
     timeoutId = setTimeout(() => {
       fn.apply(null, args);
     }, delay)

@@ -1,10 +1,8 @@
-// declarar variables
 const form = document.getElementById('form');
 const nameInput = document.getElementById('username');
 const passInput = document.getElementById('password');
 const formSubmitBtn = document.querySelector('.formSubmitBtn');
 
-// evaluamos username
 const checkUsername = () => {
   let valid = false;
   const min = 3;
@@ -21,7 +19,6 @@ const checkUsername = () => {
   return valid
 }
 
-// evaluar password
 const checkPassword = () => {
   let valid = false;
   const password = passInput.value.trim();
