@@ -313,4 +313,35 @@
         height: 5vh;
         line-height: 2;
     }
+
+    .accountOption {
+        display: flex;
+        width: 108%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 12px;
+    }
+
+    .lineAnimated {
+        padding-bottom: 0.35em;
+    }
+
+    .category {
+        background: none;
+        border: none;
+        padding: 3%;
+    }
+
+    .box > span {
+        font-size: 2.8vh;
+        display: block;
+        text-align: center;
+        height: 5vh;
+        line-height: 1;
+    }
+    
+    .cartOption {
+        width: 17%;
+    }
 }
