@@ -236,6 +236,10 @@
 }
 
 @media (max-width: 481px){
+    .logoCompany {
+        height: 20px;
+    }
+
     .splitview {
         min-height: 120px;
     }
@@ -355,7 +359,7 @@
     }
 }
 
-@media (max-width: 411px){
+@media (max-width: 415px){
     .splitview {
         min-height: 105px;
     }
@@ -396,4 +400,56 @@
     .filterProducts p {
         font-size: 12px;
     }
+}
+
+@media (max-width: 321px){
+    .splitview {
+        min-height: 80px;
+    }
+
+    .heroTitle {
+        font-size: 14px;
+    }
+
+    .filterProducts {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logoCompany {
+        height: 15px;
+    }
+
+
+
+    .productsTitle {
+        font-size: 21px;
+    }
+
+    .storeSubtitle {
+        font-size: 14px;
+    }
+
+    .storeSchedule p {
+        font-size: 12px;
+    }
+
+    .storeSchedule li {
+        font-size: 12px;
+    }
+
+    .subscribeTitle {
+        font-size: 0.7rem;
+    }
+
+    .subscribeEmail {
+        width: 155px;
+        font-size: 0.8rem;
+    }
+
+
 }
