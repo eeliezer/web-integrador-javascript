@@ -266,11 +266,11 @@
     }
 
     .imageProductFilter {
-        height: 60px;
+        height: 40px;
     }
 
     .filterProducts p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .productsTitle {
@@ -355,6 +355,13 @@
     }
 }
 
+@media (max-width: 411px){
+    .splitview {
+        min-height: 105px;
+    }
+}
+
+
 @media (max-width: 376px) {
     .splitview {
         min-height: 95px;
@@ -370,5 +377,23 @@
 
     .filterProducts p {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 376px) {
+    .splitview {
+        min-height: 95px;
+    }
+
+    .panel {
+        margin-left: 0px;
+    }
+
+    .imageProductFilter {
+        height: 40px;
+    }
+
+    .filterProducts p {
+        font-size: 12px;
     }
 }
